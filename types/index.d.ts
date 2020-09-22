@@ -1,3 +1,5 @@
+import React from 'react'
+
 export type Provider = "amazon" | "facebook" | "github" | "google" | "instagram" | "linkedin";
 
 export interface Props {

@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run lint && webpack && cp -r types dist/",
+    "build": "webpack && cp -r types dist/",
     "build:demo": "npm run lint && cd demo && webpack && cd ..",
     "start": "bnr start",
     "start:insecure": "bnr start:insecure",

@@ -104,7 +104,7 @@ const SocialLogin = (WrappedComponent) => class SocialLogin extends Component {
       }, this.onLoginFailure)
   }
 
-  componentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     const { appId, gatekeeper, provider } = this.props
 
     if (provider === 'github' && !gatekeeper && appId !== nextProps.appId) {
