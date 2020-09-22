@@ -292,7 +292,7 @@ const SocialLogin = (WrappedComponent) => class SocialLogin extends Component {
     }
 
     return (
-      <WrappedComponent triggerLogin={this.login} {...additionnalProps} {...originalProps} />
+      <WrappedComponent triggerlogin={this.login} {...additionnalProps} {...originalProps} />
     )
   }
 }
